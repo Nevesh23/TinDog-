@@ -1,0 +1,84 @@
+h1{
+    font-size: 50px;
+}
+
+.dog{
+    width: 200px;
+}
+
+#title{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+.profile-img {
+    height: 100px;
+    border-radius: 50%;
+  }
+
+.dog-box{
+    padding-bottom: 0px;
+}
+
+.dog-image{
+    border-radius: 50%;
+    height: 100px;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 24px;
+    color: black;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1000px){
+    .logos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 10px;
+        
+    }
+}
+
+.card-header{
+    background-color:red;
+}
+
+.gradient-footer{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.card{
+    border: none;
+}
